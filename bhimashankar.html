@@ -1,1 +1,99 @@
 
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>श्री भीमाशंकर ज्योतिर्लिंग | 12 Jyotirlinga Darshan</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#0b1020;color:#fff;line-height:1.8}
+header{text-align:center;padding:35px 16px;background:linear-gradient(135deg,#101b3b,#40215b)}
+h1,h2{color:#ffd477}
+h1{font-size:29px}
+main{max-width:850px;margin:auto;padding:16px}
+.card{background:#151d33;border:1px solid #34415e;border-radius:14px;padding:18px;margin:18px 0}
+button,.btn{display:inline-block;background:#e6b84b;color:#171323;border:0;border-radius:9px;padding:12px 16px;font-size:16px;font-weight:bold;text-decoration:none;margin:5px;cursor:pointer}
+a{color:#ffd477}
+.mantra{text-align:center;font-size:23px;color:#ffd477}
+footer{text-align:center;padding:22px;color:#c6cce0}
+</style>
+</head>
+<body>
+<header>
+<h1>🔱 श्री भीमाशंकर ज्योतिर्लिंग 🔱</h1>
+<p>ॐ नमः शिवाय • हर हर महादेव</p>
+<p>सह्याद्रि पर्वतों में विराजमान बाबा भोलेनाथ</p>
+</header>
+
+<main>
+<p><a href="index.html">← मुख्य पेज पर वापस जाएँ</a></p>
+
+<section class="card">
+<h2>🙏 बाबा भीमाशंकर की महिमा</h2>
+<p>महाराष्ट्र के सह्याद्रि पर्वतीय क्षेत्र में स्थित भीमाशंकर भगवान शिव के बारह ज्योतिर्लिंगों में से एक माना जाता है। यह स्थान अपनी प्राकृतिक सुंदरता, हरियाली और आध्यात्मिक वातावरण के लिए प्रसिद्ध है।</p>
+</section>
+
+<section class="card">
+<h2>📖 प्रचलित पौराणिक कथा</h2>
+<p>एक प्रचलित कथा के अनुसार, भीम नाम का एक शक्तिशाली असुर भगवान शिव के भक्तों को परेशान करता था। जब उसने भक्तों पर अत्याचार किए, तब भगवान शिव ने अपने भक्तों की रक्षा के लिए उससे युद्ध किया और उसका संहार किया। भक्तों की प्रार्थना पर भगवान शिव उस क्षेत्र में ज्योतिर्लिंग रूप में विराजमान हुए। यह स्थान भीमाशंकर नाम से प्रसिद्ध हुआ।</p>
+<p><small>यह प्रचलित पौराणिक कथा का सरल सार है। अलग-अलग परंपराओं में कथा का विवरण भिन्न हो सकता है।</small></p>
+</section>
+
+<section class="card">
+<h2>🛕 मंदिर की जानकारी</h2>
+<p><b>स्थान:</b> सह्याद्रि पर्वतीय क्षेत्र, पुणे जिला, महाराष्ट्र</p>
+<p><b>विशेषता:</b> प्राचीन शिव मंदिर, पहाड़ी वातावरण और आसपास का प्राकृतिक वन क्षेत्र।</p>
+<p>यात्रा से पहले दर्शन का समय, मौसम और रास्ते की जानकारी आधिकारिक स्रोत से जाँच लें।</p>
+<a class="btn" href="https://www.maharashtratourism.gov.in/" target="_blank" rel="noopener">महाराष्ट्र पर्यटन वेबसाइट</a>
+</section>
+
+<section class="card">
+<h2>🔊 कथा सुनें</h2>
+<p>नीचे दिए गए बटन से हिंदी में कथा सुन सकते हैं। आवाज आपके मोबाइल के ब्राउज़र की सुविधा पर निर्भर करेगी।</p>
+<button onclick="speakStory()">▶ कथा सुनें</button>
+<button onclick="speechSynthesis.cancel()">⏹ रोकें</button>
+</section>
+
+<section class="card">
+<h2>🕉️ शिव मंत्र</h2>
+<p class="mantra">ॐ नमः शिवाय</p>
+<div style="text-align:center">
+<button onclick="speakMantra()">🔔 मंत्र सुनें</button>
+<button onclick="speechSynthesis.cancel()">⏹ रोकें</button>
+</div>
+</section>
+
+<section class="card">
+<h2>🌺 भक्तों के लिए संदेश</h2>
+<p>श्रद्धा, सेवा और सद्भाव के साथ भगवान शिव का स्मरण करें। सभी के जीवन में सुख, शांति और सद्बुद्धि बनी रहे।</p>
+<p class="mantra">हर हर महादेव 🙏</p>
+</section>
+
+<p><a href="index.html">← सभी 12 ज्योतिर्लिंग देखें</a></p>
+</main>
+
+<footer>12 Jyotirlinga Darshan | ॐ नमः शिवाय 🔱</footer>
+
+<script>
+function speak(text){
+ if(!("speechSynthesis" in window)){
+  alert("आपका ब्राउज़र आवाज़ चलाने की सुविधा नहीं देता।");
+  return;
+ }
+ speechSynthesis.cancel();
+ let msg=new SpeechSynthesisUtterance(text);
+ msg.lang="hi-IN";
+ msg.rate=0.85;
+ speechSynthesis.speak(msg);
+}
+function speakStory(){
+ speak("जय भोलेनाथ। महाराष्ट्र के सह्याद्रि पर्वतीय क्षेत्र में भीमाशंकर ज्योतिर्लिंग स्थित है। प्रचलित पौराणिक कथा के अनुसार भीम नाम के असुर ने भगवान शिव के भक्तों को परेशान किया। भक्तों की रक्षा के लिए भगवान शिव ने उसका संहार किया। भक्तों की प्रार्थना पर भगवान शिव वहाँ ज्योतिर्लिंग रूप में विराजमान हुए। हर हर महादेव।");
+}
+function speakMantra(){
+ speak("ॐ नमः शिवाय। ॐ नमः शिवाय। ॐ नमः शिवाय। हर हर महादेव।");
+}
+</script>
+</body>
+</html>
+
