@@ -1,1 +1,99 @@
 
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>श्री नागेश्वर ज्योतिर्लिंग | 12 Jyotirlinga Darshan</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#0b1020;color:#fff;line-height:1.8}
+header{text-align:center;padding:35px 16px;background:linear-gradient(135deg,#102b46,#174f54)}
+h1,h2{color:#ffd477}
+h1{font-size:29px}
+main{max-width:850px;margin:auto;padding:16px}
+.card{background:#151d33;border:1px solid #34415e;border-radius:14px;padding:18px;margin:18px 0}
+button,.btn{display:inline-block;background:#e6b84b;color:#171323;border:0;border-radius:9px;padding:12px 16px;font-size:16px;font-weight:bold;text-decoration:none;margin:5px;cursor:pointer}
+a{color:#ffd477}
+.mantra{text-align:center;font-size:23px;color:#ffd477}
+footer{text-align:center;padding:22px;color:#c6cce0}
+</style>
+</head>
+<body>
+<header>
+<h1>🔱 श्री नागेश्वर ज्योतिर्लिंग 🔱</h1>
+<p>ॐ नमः शिवाय • हर हर महादेव</p>
+<p>भक्तों की रक्षा करने वाले बाबा नागेश्वर</p>
+</header>
+
+<main>
+<p><a href="index.html">← मुख्य पेज पर वापस जाएँ</a></p>
+
+<section class="card">
+<h2>🙏 बाबा नागेश्वर की महिमा</h2>
+<p>नागेश्वर ज्योतिर्लिंग भगवान शिव के बारह ज्योतिर्लिंगों में से एक माना जाता है। गुजरात में द्वारका के निकट स्थित नागेश्वर मंदिर एक प्रसिद्ध शिव तीर्थ है। नागेश्वर नाम भगवान शिव के नागों से जुड़े स्वरूप और भक्तों की रक्षा की धार्मिक मान्यता से जुड़ा है।</p>
+</section>
+
+<section class="card">
+<h2>📖 प्रचलित पौराणिक कथा</h2>
+<p>शिव पुराण में वर्णित एक प्रसिद्ध कथा के अनुसार, सुप्रिय नाम का शिवभक्त एक दैत्य के बंधन में पड़ गया। संकट के समय उसने भगवान शिव का स्मरण किया। भक्त की पुकार सुनकर भगवान शिव प्रकट हुए और उसकी रक्षा की। इस कथा को नागेश्वर ज्योतिर्लिंग की महिमा से जोड़ा जाता है।</p>
+<p><small>यह प्रचलित पौराणिक कथा का सरल सार है। नागेश्वर ज्योतिर्लिंग के स्थान को लेकर अलग-अलग धार्मिक परंपराएँ भी हैं।</small></p>
+</section>
+
+<section class="card">
+<h2>🛕 मंदिर की जानकारी</h2>
+<p><b>स्थान:</b> द्वारका के निकट, गुजरात — एक प्रमुख प्रचलित मान्यता</p>
+<p><b>विशेषता:</b> भगवान शिव को समर्पित प्रसिद्ध तीर्थ, जहाँ भक्त पूजा और दर्शन के लिए आते हैं।</p>
+<p>यात्रा से पहले दर्शन का समय, रास्ता और मंदिर संबंधी जानकारी आधिकारिक स्रोत से जाँच लें।</p>
+<a class="btn" href="https://www.gujarattourism.com/" target="_blank" rel="noopener">गुजरात पर्यटन वेबसाइट</a>
+</section>
+
+<section class="card">
+<h2>🔊 कथा सुनें</h2>
+<p>हिंदी में कथा सुनने के लिए नीचे बटन दबाएँ। आवाज़ आपके मोबाइल के ब्राउज़र पर निर्भर करेगी।</p>
+<button onclick="speakStory()">▶ कथा सुनें</button>
+<button onclick="speechSynthesis.cancel()">⏹ रोकें</button>
+</section>
+
+<section class="card">
+<h2>🕉️ शिव मंत्र</h2>
+<p class="mantra">ॐ नमः शिवाय</p>
+<div style="text-align:center">
+<button onclick="speakMantra()">🔔 मंत्र सुनें</button>
+<button onclick="speechSynthesis.cancel()">⏹ रोकें</button>
+</div>
+</section>
+
+<section class="card">
+<h2>🌺 भक्तों के लिए संदेश</h2>
+<p>भगवान शिव से साहस, शांति और सद्बुद्धि की प्रार्थना करें। दूसरों की सहायता करना और सभी जीवों के प्रति दया रखना भी भक्ति का सुंदर रूप है।</p>
+<p class="mantra">हर हर महादेव 🙏</p>
+</section>
+
+<p><a href="index.html">← सभी 12 ज्योतिर्लिंग देखें</a></p>
+</main>
+
+<footer>12 Jyotirlinga Darshan | ॐ नमः शिवाय 🔱</footer>
+
+<script>
+function speak(text){
+ if(!("speechSynthesis" in window)){
+  alert("आपका ब्राउज़र आवाज़ चलाने की सुविधा नहीं देता।");
+  return;
+ }
+ speechSynthesis.cancel();
+ let msg=new SpeechSynthesisUtterance(text);
+ msg.lang="hi-IN";
+ msg.rate=0.85;
+ speechSynthesis.speak(msg);
+}
+function speakStory(){
+ speak("हर हर महादेव। नागेश्वर ज्योतिर्लिंग भगवान शिव के बारह ज्योतिर्लिंगों में से एक माना जाता है। शिव पुराण की एक प्रसिद्ध कथा के अनुसार सुप्रिय नाम के शिवभक्त ने संकट के समय भगवान शिव का स्मरण किया। भगवान शिव प्रकट हुए और अपने भक्त की रक्षा की। भक्त बाबा नागेश्वर से साहस, शांति और कल्याण की प्रार्थना करते हैं। ॐ नमः शिवाय।");
+}
+function speakMantra(){
+ speak("ॐ नमः शिवाय। ॐ नमः शिवाय। ॐ नमः शिवाय। हर हर महादेव।");
+}
+</script>
+</body>
+</html>
+
