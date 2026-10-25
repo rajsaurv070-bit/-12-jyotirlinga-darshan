@@ -1,1 +1,99 @@
 
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>श्री वैद्यनाथ ज्योतिर्लिंग | 12 Jyotirlinga Darshan</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#0b1020;color:#fff;line-height:1.8}
+header{text-align:center;padding:35px 16px;background:linear-gradient(135deg,#301747,#642d38)}
+h1,h2{color:#ffd477}
+h1{font-size:29px}
+main{max-width:850px;margin:auto;padding:16px}
+.card{background:#151d33;border:1px solid #34415e;border-radius:14px;padding:18px;margin:18px 0}
+button,.btn{display:inline-block;background:#e6b84b;color:#171323;border:0;border-radius:9px;padding:12px 16px;font-size:16px;font-weight:bold;text-decoration:none;margin:5px;cursor:pointer}
+a{color:#ffd477}
+.mantra{text-align:center;font-size:23px;color:#ffd477}
+footer{text-align:center;padding:22px;color:#c6cce0}
+</style>
+</head>
+<body>
+<header>
+<h1>🔱 श्री वैद्यनाथ ज्योतिर्लिंग 🔱</h1>
+<p>ॐ नमः शिवाय • हर हर महादेव</p>
+<p>भक्तों के कष्ट हरने वाले बाबा बैद्यनाथ</p>
+</header>
+
+<main>
+<p><a href="index.html">← मुख्य पेज पर वापस जाएँ</a></p>
+
+<section class="card">
+<h2>🙏 बाबा वैद्यनाथ की महिमा</h2>
+<p>वैद्यनाथ को भगवान शिव के बारह ज्योतिर्लिंगों में गिना जाता है। झारखंड के देवघर में स्थित बाबा बैद्यनाथ धाम एक प्रसिद्ध तीर्थस्थल है। यहाँ सावन के महीने में बड़ी संख्या में श्रद्धालु दर्शन के लिए आते हैं। वैद्यनाथ नाम को भगवान शिव की उपचार करने वाले और भक्तों के कष्ट दूर करने वाले रूप से जोड़ा जाता है।</p>
+</section>
+
+<section class="card">
+<h2>📖 प्रचलित पौराणिक कथा</h2>
+<p>एक प्रचलित कथा के अनुसार, रावण भगवान शिव का महान भक्त था। उसने कठोर तपस्या करके शिवजी को प्रसन्न किया और उनसे लिंग रूप में अपने साथ चलने का वरदान माँगा। कथा में आगे बताया जाता है कि एक शर्त के कारण शिवलिंग धरती पर स्थापित हो गया। वह स्थान वैद्यनाथ धाम के नाम से प्रसिद्ध हुआ।</p>
+<p><small>वैद्यनाथ ज्योतिर्लिंग के स्थान को लेकर अलग-अलग धार्मिक परंपराएँ हैं। देवघर, झारखंड एक प्रमुख मान्यता है। यह कथा प्रचलित पौराणिक वर्णन का सरल सार है।</small></p>
+</section>
+
+<section class="card">
+<h2>🛕 मंदिर की जानकारी</h2>
+<p><b>स्थान:</b> देवघर, झारखंड — एक प्रमुख प्रचलित मान्यता</p>
+<p><b>विशेषता:</b> प्रसिद्ध शिव तीर्थ, विशेष रूप से सावन की पूजा और कांवड़ यात्रा के लिए जाना जाता है।</p>
+<p>दर्शन का समय, भीड़, पूजा और यात्रा संबंधी जानकारी जाने से पहले आधिकारिक स्रोत से जाँच लें।</p>
+<a class="btn" href="https://deoghar.nic.in/" target="_blank" rel="noopener">देवघर जिला वेबसाइट</a>
+</section>
+
+<section class="card">
+<h2>🔊 कथा सुनें</h2>
+<p>हिंदी में कथा सुनने के लिए नीचे बटन दबाएँ। आवाज़ आपके मोबाइल के ब्राउज़र पर निर्भर करेगी।</p>
+<button onclick="speakStory()">▶ कथा सुनें</button>
+<button onclick="speechSynthesis.cancel()">⏹ रोकें</button>
+</section>
+
+<section class="card">
+<h2>🕉️ शिव मंत्र</h2>
+<p class="mantra">ॐ नमः शिवाय</p>
+<div style="text-align:center">
+<button onclick="speakMantra()">🔔 मंत्र सुनें</button>
+<button onclick="speechSynthesis.cancel()">⏹ रोकें</button>
+</div>
+</section>
+
+<section class="card">
+<h2>🌺 भक्तों के लिए संदेश</h2>
+<p>सच्ची भक्ति में प्रेम, सेवा और करुणा का भाव होता है। भगवान शिव से सभी के स्वास्थ्य, शांति और कल्याण की प्रार्थना करें।</p>
+<p class="mantra">हर हर महादेव 🙏</p>
+</section>
+
+<p><a href="index.html">← सभी 12 ज्योतिर्लिंग देखें</a></p>
+</main>
+
+<footer>12 Jyotirlinga Darshan | ॐ नमः शिवाय 🔱</footer>
+
+<script>
+function speak(text){
+ if(!("speechSynthesis" in window)){
+  alert("आपका ब्राउज़र आवाज़ चलाने की सुविधा नहीं देता।");
+  return;
+ }
+ speechSynthesis.cancel();
+ let msg=new SpeechSynthesisUtterance(text);
+ msg.lang="hi-IN";
+ msg.rate=0.85;
+ speechSynthesis.speak(msg);
+}
+function speakStory(){
+ speak("हर हर महादेव। झारखंड के देवघर में स्थित बाबा बैद्यनाथ धाम एक प्रसिद्ध शिव तीर्थ है। प्रचलित कथा के अनुसार रावण भगवान शिव का महान भक्त था। कठोर तपस्या के बाद शिवलिंग से जुड़ी एक घटना के कारण भगवान शिव का यह स्वरूप वैद्यनाथ धाम के नाम से प्रसिद्ध हुआ। भक्त बाबा बैद्यनाथ से शांति, स्वास्थ्य और कल्याण की प्रार्थना करते हैं। ॐ नमः शिवाय।");
+}
+function speakMantra(){
+ speak("ॐ नमः शिवाय। ॐ नमः शिवाय। ॐ नमः शिवाय। हर हर महादेव।");
+}
+</script>
+</body>
+</html>
+
