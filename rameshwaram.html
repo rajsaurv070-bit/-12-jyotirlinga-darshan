@@ -1,1 +1,99 @@
 
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>श्री रामेश्वरम ज्योतिर्लिंग | 12 Jyotirlinga Darshan</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#0b1020;color:#fff;line-height:1.8}
+header{text-align:center;padding:35px 16px;background:linear-gradient(135deg,#123c59,#176b70)}
+h1,h2{color:#ffd477}
+h1{font-size:29px}
+main{max-width:850px;margin:auto;padding:16px}
+.card{background:#151d33;border:1px solid #34415e;border-radius:14px;padding:18px;margin:18px 0}
+button,.btn{display:inline-block;background:#e6b84b;color:#171323;border:0;border-radius:9px;padding:12px 16px;font-size:16px;font-weight:bold;text-decoration:none;margin:5px;cursor:pointer}
+a{color:#ffd477}
+.mantra{text-align:center;font-size:23px;color:#ffd477}
+footer{text-align:center;padding:22px;color:#c6cce0}
+</style>
+</head>
+<body>
+<header>
+<h1>🔱 श्री रामेश्वरम ज्योतिर्लिंग 🔱</h1>
+<p>ॐ नमः शिवाय • हर हर महादेव</p>
+<p>समुद्र तट पर विराजमान बाबा रामनाथस्वामी</p>
+</header>
+
+<main>
+<p><a href="index.html">← मुख्य पेज पर वापस जाएँ</a></p>
+
+<section class="card">
+<h2>🙏 रामेश्वरम की महिमा</h2>
+<p>तमिलनाडु के रामेश्वरम द्वीप पर स्थित श्री रामनाथस्वामी मंदिर बारह ज्योतिर्लिंगों में से एक माना जाता है। यह स्थान रामायण की परंपरा से गहराई से जुड़ा है। मंदिर अपने लंबे गलियारों, पवित्र कुंडों और द्रविड़ स्थापत्य के लिए प्रसिद्ध है।</p>
+</section>
+
+<section class="card">
+<h2>📖 प्रचलित पौराणिक कथा</h2>
+<p>प्रचलित रामायण परंपरा के अनुसार, लंका जाने से पहले भगवान श्रीराम ने समुद्र तट पर भगवान शिव की पूजा की थी और विजय के लिए आशीर्वाद माँगा था। मान्यता है कि श्रीराम द्वारा पूजित शिवलिंग के कारण यह स्थान रामेश्वरम कहलाया। यहाँ भगवान शिव को रामनाथस्वामी के रूप में पूजा जाता है।</p>
+<p><small>यह प्रचलित धार्मिक परंपरा का सरल सार है। अलग-अलग ग्रंथों और परंपराओं में विवरण भिन्न हो सकते हैं।</small></p>
+</section>
+
+<section class="card">
+<h2>🛕 मंदिर की जानकारी</h2>
+<p><b>स्थान:</b> रामेश्वरम, जिला रामनाथपुरम, तमिलनाडु</p>
+<p><b>विशेषता:</b> विशाल मंदिर गलियारे, पवित्र तीर्थ-कुंड और रामायण से जुड़ी धार्मिक मान्यताएँ।</p>
+<p>दर्शन का समय, पूजा, पोशाक संबंधी नियम और यात्रा की जानकारी जाने से पहले आधिकारिक स्रोत पर जाँच लें।</p>
+<a class="btn" href="https://ramanathapuram.nic.in/" target="_blank" rel="noopener">रामनाथपुरम जिला वेबसाइट</a>
+</section>
+
+<section class="card">
+<h2>🔊 कथा सुनें</h2>
+<p>हिंदी में कथा सुनने के लिए नीचे बटन दबाएँ। आवाज़ आपके मोबाइल के ब्राउज़र पर निर्भर करेगी।</p>
+<button onclick="speakStory()">▶ कथा सुनें</button>
+<button onclick="speechSynthesis.cancel()">⏹ रोकें</button>
+</section>
+
+<section class="card">
+<h2>🕉️ शिव मंत्र</h2>
+<p class="mantra">ॐ नमः शिवाय</p>
+<div style="text-align:center">
+<button onclick="speakMantra()">🔔 मंत्र सुनें</button>
+<button onclick="speechSynthesis.cancel()">⏹ रोकें</button>
+</div>
+</section>
+
+<section class="card">
+<h2>🌺 भक्तों के लिए संदेश</h2>
+<p>भक्ति हमें विनम्रता, साहस और सेवा का मार्ग दिखाती है। भगवान शिव से सभी के जीवन में शांति, सद्बुद्धि और कल्याण की प्रार्थना करें।</p>
+<p class="mantra">जय श्रीराम • हर हर महादेव 🙏</p>
+</section>
+
+<p><a href="index.html">← सभी 12 ज्योतिर्लिंग देखें</a></p>
+</main>
+
+<footer>12 Jyotirlinga Darshan | ॐ नमः शिवाय 🔱</footer>
+
+<script>
+function speak(text){
+ if(!("speechSynthesis" in window)){
+  alert("आपका ब्राउज़र आवाज़ चलाने की सुविधा नहीं देता।");
+  return;
+ }
+ speechSynthesis.cancel();
+ let msg=new SpeechSynthesisUtterance(text);
+ msg.lang="hi-IN";
+ msg.rate=0.85;
+ speechSynthesis.speak(msg);
+}
+function speakStory(){
+ speak("जय श्रीराम। तमिलनाडु के रामेश्वरम द्वीप पर श्री रामनाथस्वामी मंदिर स्थित है। प्रचलित रामायण परंपरा के अनुसार, लंका जाने से पहले भगवान श्रीराम ने समुद्र तट पर भगवान शिव की पूजा की और विजय का आशीर्वाद माँगा। इस स्थान पर भगवान शिव रामनाथस्वामी के रूप में पूजे जाते हैं। भक्त यहाँ श्रद्धा से दर्शन करते हैं। ॐ नमः शिवाय। हर हर महादेव।");
+}
+function speakMantra(){
+ speak("ॐ नमः शिवाय। ॐ नमः शिवाय। ॐ नमः शिवाय। हर हर महादेव।");
+}
+</script>
+</body>
+</html>
+
