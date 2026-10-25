@@ -1,1 +1,99 @@
 
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>श्री काशी विश्वनाथ | 12 Jyotirlinga Darshan</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#0b1020;color:#fff;line-height:1.8}
+header{text-align:center;padding:35px 16px;background:linear-gradient(135deg,#251448,#75421f)}
+h1,h2{color:#ffd477}
+h1{font-size:29px}
+main{max-width:850px;margin:auto;padding:16px}
+.card{background:#151d33;border:1px solid #34415e;border-radius:14px;padding:18px;margin:18px 0}
+button,.btn{display:inline-block;background:#e6b84b;color:#171323;border:0;border-radius:9px;padding:12px 16px;font-size:16px;font-weight:bold;text-decoration:none;margin:5px;cursor:pointer}
+a{color:#ffd477}
+.mantra{text-align:center;font-size:23px;color:#ffd477}
+footer{text-align:center;padding:22px;color:#c6cce0}
+</style>
+</head>
+<body>
+<header>
+<h1>🔱 श्री काशी विश्वनाथ ज्योतिर्लिंग 🔱</h1>
+<p>ॐ नमः शिवाय • हर हर महादेव</p>
+<p>काशी के अधिपति बाबा विश्वनाथ</p>
+</header>
+
+<main>
+<p><a href="index.html">← मुख्य पेज पर वापस जाएँ</a></p>
+
+<section class="card">
+<h2>🙏 बाबा विश्वनाथ की महिमा</h2>
+<p>उत्तर प्रदेश के वाराणसी में पवित्र गंगा नदी के निकट स्थित काशी विश्वनाथ मंदिर भगवान शिव के बारह ज्योतिर्लिंगों में से एक है। काशी को प्राचीन आध्यात्मिक नगरी माना जाता है। यहाँ दूर-दूर से भक्त बाबा विश्वनाथ के दर्शन और पूजा के लिए आते हैं।</p>
+</section>
+
+<section class="card">
+<h2>📖 प्रचलित पौराणिक कथा</h2>
+<p>प्रचलित मान्यता के अनुसार, भगवान शिव को काशी अत्यंत प्रिय है। वे यहाँ विश्वनाथ अर्थात संसार के स्वामी के रूप में विराजमान हैं। काशी को मोक्ष और आध्यात्मिक ज्ञान की नगरी माना जाता है। भक्त विश्वास और श्रद्धा के साथ बाबा विश्वनाथ का स्मरण करते हैं तथा उनसे शांति, सद्बुद्धि और कल्याण की प्रार्थना करते हैं।</p>
+<p><small>यह प्रचलित धार्मिक मान्यताओं का सरल सार है। अलग-अलग परंपराओं में कथा का विवरण भिन्न हो सकता है।</small></p>
+</section>
+
+<section class="card">
+<h2>🛕 मंदिर की जानकारी</h2>
+<p><b>स्थान:</b> वाराणसी, उत्तर प्रदेश</p>
+<p><b>विशेषता:</b> पवित्र काशी नगरी में स्थित प्रसिद्ध शिव मंदिर, जहाँ गंगा घाटों और प्राचीन गलियों का भी आध्यात्मिक महत्व है।</p>
+<p>दर्शन, प्रवेश, आरती और यात्रा संबंधी ताज़ा जानकारी आधिकारिक वेबसाइट पर जाँचें।</p>
+<a class="btn" href="https://shrikashivishwanath.org/" target="_blank" rel="noopener">आधिकारिक मंदिर वेबसाइट</a>
+</section>
+
+<section class="card">
+<h2>🔊 कथा सुनें</h2>
+<p>हिंदी में कथा सुनने के लिए नीचे बटन दबाएँ। आवाज़ आपके मोबाइल के ब्राउज़र पर निर्भर करेगी।</p>
+<button onclick="speakStory()">▶ कथा सुनें</button>
+<button onclick="speechSynthesis.cancel()">⏹ रोकें</button>
+</section>
+
+<section class="card">
+<h2>🕉️ शिव मंत्र</h2>
+<p class="mantra">ॐ नमः शिवाय</p>
+<div style="text-align:center">
+<button onclick="speakMantra()">🔔 मंत्र सुनें</button>
+<button onclick="speechSynthesis.cancel()">⏹ रोकें</button>
+</div>
+</section>
+
+<section class="card">
+<h2>🌺 भक्तों के लिए संदेश</h2>
+<p>बाबा विश्वनाथ से प्रार्थना करें कि सभी के जीवन में शांति, करुणा और सद्बुद्धि बनी रहे। श्रद्धा के साथ अच्छे कर्म करना भी सच्ची भक्ति का महत्वपूर्ण हिस्सा है।</p>
+<p class="mantra">हर हर महादेव 🙏</p>
+</section>
+
+<p><a href="index.html">← सभी 12 ज्योतिर्लिंग देखें</a></p>
+</main>
+
+<footer>12 Jyotirlinga Darshan | ॐ नमः शिवाय 🔱</footer>
+
+<script>
+function speak(text){
+ if(!("speechSynthesis" in window)){
+  alert("आपका ब्राउज़र आवाज़ चलाने की सुविधा नहीं देता।");
+  return;
+ }
+ speechSynthesis.cancel();
+ let msg=new SpeechSynthesisUtterance(text);
+ msg.lang="hi-IN";
+ msg.rate=0.85;
+ speechSynthesis.speak(msg);
+}
+function speakStory(){
+ speak("हर हर महादेव। उत्तर प्रदेश के वाराणसी में बाबा काशी विश्वनाथ का प्रसिद्ध मंदिर स्थित है। प्रचलित मान्यता के अनुसार भगवान शिव काशी में विश्वनाथ, अर्थात संसार के स्वामी, के रूप में विराजमान हैं। काशी को प्राचीन आध्यात्मिक नगरी माना जाता है। भक्त बाबा विश्वनाथ से शांति, सद्बुद्धि और कल्याण की प्रार्थना करते हैं। ॐ नमः शिवाय।");
+}
+function speakMantra(){
+ speak("ॐ नमः शिवाय। ॐ नमः शिवाय। ॐ नमः शिवाय। हर हर महादेव।");
+}
+</script>
+</body>
+</html>
+
