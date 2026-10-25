@@ -1,1 +1,102 @@
 
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>श्री घृष्णेश्वर ज्योतिर्लिंग | 12 Jyotirlinga Darshan</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#0b1020;color:#fff;line-height:1.8}
+header{text-align:center;padding:35px 16px;background:linear-gradient(135deg,#48251c,#7a4925)}
+h1,h2{color:#ffd477}
+h1{font-size:29px}
+main{max-width:850px;margin:auto;padding:16px}
+.card{background:#151d33;border:1px solid #34415e;border-radius:14px;padding:18px;margin:18px 0}
+button,.btn{display:inline-block;background:#e6b84b;color:#171323;border:0;border-radius:9px;padding:12px 16px;font-size:16px;font-weight:bold;text-decoration:none;margin:5px;cursor:pointer}
+a{color:#ffd477}
+.mantra{text-align:center;font-size:23px;color:#ffd477}
+footer{text-align:center;padding:22px;color:#c6cce0}
+</style>
+</head>
+<body>
+<header>
+<h1>🔱 श्री घृष्णेश्वर ज्योतिर्लिंग 🔱</h1>
+<p>ॐ नमः शिवाय • हर हर महादेव</p>
+<p>भक्ति और अटूट श्रद्धा का पवित्र धाम</p>
+</header>
+
+<main>
+<p><a href="index.html">← मुख्य पेज पर वापस जाएँ</a></p>
+
+<section class="card">
+<h2>🙏 घृष्णेश्वर की महिमा</h2>
+<p>घृष्णेश्वर ज्योतिर्लिंग महाराष्ट्र के छत्रपति संभाजीनगर जिले में वेरुल (एलोरा) के निकट स्थित है। इसे भगवान शिव के बारह ज्योतिर्लिंगों में अंतिम माना जाता है। मंदिर अपनी धार्मिक महत्ता और सुंदर पारंपरिक स्थापत्य के लिए प्रसिद्ध है।</p>
+</section>
+
+<section class="card">
+<h2>📖 प्रचलित पौराणिक कथा</h2>
+<p>एक प्रचलित कथा के अनुसार, घुश्मा नाम की एक शिवभक्त महिला प्रतिदिन श्रद्धा से शिवलिंग की पूजा करती थी। कठिन पारिवारिक परिस्थितियों के बावजूद उसने अपनी भक्ति बनाए रखी। उसकी अटूट श्रद्धा से प्रसन्न होकर भगवान शिव प्रकट हुए और उसे आशीर्वाद दिया। मान्यता है कि भक्तों की प्रार्थना पर भगवान शिव इस स्थान पर ज्योतिर्लिंग रूप में विराजमान हुए।</p>
+<p><small>यह प्रचलित पौराणिक कथा का सरल सार है। अलग-अलग परंपराओं में विवरण भिन्न हो सकते हैं।</small></p>
+</section>
+
+<section class="card">
+<h2>🛕 मंदिर की जानकारी</h2>
+<p><b>स्थान:</b> वेरुल (एलोरा) के निकट, महाराष्ट्र</p>
+<p><b>विशेषता:</b> पारंपरिक पत्थर का मंदिर और एलोरा की ऐतिहासिक धरोहरों के निकट स्थित पवित्र शिव तीर्थ।</p>
+<p>दर्शन का समय, पूजा के नियम और यात्रा की जानकारी जाने से पहले आधिकारिक स्रोत से जाँच लें।</p>
+<a class="btn" href="https://www.maharashtratourism.gov.in/" target="_blank" rel="noopener">महाराष्ट्र पर्यटन वेबसाइट</a>
+</section>
+
+<section class="card">
+<h2>🔊 कथा सुनें</h2>
+<p>हिंदी में कथा सुनने के लिए नीचे बटन दबाएँ। आवाज़ आपके मोबाइल के ब्राउज़र पर निर्भर करेगी।</p>
+<button onclick="speakStory()">▶ कथा सुनें</button>
+<button onclick="stopSpeech()">⏹ रोकें</button>
+</section>
+
+<section class="card">
+<h2>🕉️ शिव मंत्र</h2>
+<p class="mantra">ॐ नमः शिवाय</p>
+<div style="text-align:center">
+<button onclick="speakMantra()">🔔 मंत्र सुनें</button>
+<button onclick="stopSpeech()">⏹ रोकें</button>
+</div>
+</section>
+
+<section class="card">
+<h2>🌺 भक्तों के लिए संदेश</h2>
+<p>सच्ची श्रद्धा, धैर्य और करुणा जीवन को सुंदर बनाते हैं। भगवान शिव से सभी के कल्याण, शांति और सद्बुद्धि की प्रार्थना करें।</p>
+<p class="mantra">हर हर महादेव 🙏</p>
+</section>
+
+<p><a href="index.html">← सभी 12 ज्योतिर्लिंग देखें</a></p>
+</main>
+
+<footer>12 Jyotirlinga Darshan | ॐ नमः शिवाय 🔱</footer>
+
+<script>
+function speak(text){
+ if(!("speechSynthesis" in window)){
+  alert("आपका ब्राउज़र आवाज़ चलाने की सुविधा नहीं देता।");
+  return;
+ }
+ speechSynthesis.cancel();
+ let msg=new SpeechSynthesisUtterance(text);
+ msg.lang="hi-IN";
+ msg.rate=0.85;
+ speechSynthesis.speak(msg);
+}
+function stopSpeech(){
+ if("speechSynthesis" in window) speechSynthesis.cancel();
+}
+function speakStory(){
+ speak("हर हर महादेव। महाराष्ट्र में एलोरा के निकट घृष्णेश्वर ज्योतिर्लिंग स्थित है। प्रचलित कथा के अनुसार घुश्मा नाम की शिवभक्त महिला कठिन परिस्थितियों में भी अपनी भक्ति पर अडिग रही। उसकी श्रद्धा से प्रसन्न होकर भगवान शिव ने उसे आशीर्वाद दिया। यह स्थान घृष्णेश्वर ज्योतिर्लिंग के रूप में प्रसिद्ध है। ॐ नमः शिवाय।");
+}
+function speakMantra(){
+ speak("ॐ नमः शिवाय। ॐ नमः शिवाय। ॐ नमः शिवाय। हर हर महादेव।");
+}
+</script>
+</body>
+</html>
+
